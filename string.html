@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>String字符串</title>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+		let str = 'As sly as a fox, as strong as an ox';
+		
+		let target = 'as'; //目标
+		// 查找字符串存在的位置
+//		let pos = 0;
+// 		while (true) {
+// 			let foundPos = str.indexOf(target, pos);
+// 			if (foundPos == -1) break;
+// 			
+// 			alert( `Found at ${foundPos}` );
+// 			pos = foundPos + 1;
+// 		} 
+	//  相应的算法
+		let pos = -1;
+		while ( (pos = str.indexOf(target, pos + 1)) != -1 ) {
+			alert(pos);
+		}
+		
+		// str.lastIndexOf() 从后往前查找
+	</script>
+</html>
