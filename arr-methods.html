@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script>
+		let arr = [
+			{id:1,name:'lai'},
+			{id:2,name:'ze'},
+			{id:3,name:'chang'},
+		];
+		
+		// find 返回true的第一个元素
+		let result = arr.find( itme => itme.id = 2 )
+		// alert(result);
+		
+		// filter 返回所有匹配元素组成的数组
+		let arr1 = [1,2,3,4,5,6,7,8];
+		let rlt = arr1.filter( item => item > 3 );
+		console.log(rlt);
+		
+		// map 对每个数组元素进行调用加工 (数据加工) 
+		let arrmap = [1,2,3,4,5,6];
+		let rlt2 = arrmap.map( item => item * 2);
+		console.log(rlt2);
+		
+		// sort 排序 a-b 升序  b-a降序
+		// 数字排序
+		let arrsort = [2,12,3,1,7,5,9,11,34,20];
+		arrsort.sort((a,b) => a - b);
+		console.log(arrsort)
+		
+		// 字符串排序
+		let arrstring = ['a','c','b','aa','cc'];
+		arrstring.sort();
+		console.log(arrstring)
+		
+		// reverse 反转数组顺序
+		let arrresve = [1,2,3,4,5,6];
+		arrresve.reverse();
+		console.log(arrresve)
+		
+		// split 字符串根据传入的符号切割成数组
+		let str = 'lai-ze-chang';
+		let arrsplit = str.split('-');
+		console.log(arrsplit);
+		// 传空参数只会拆分字符
+		let arrsplit2 = str.split('');
+		console.log(arrsplit2);
+		
+		// join 将数组用传入的参数符号连接成字符串
+		let strjoin = arrsplit2.join(',');
+		console.log(strjoin);
+		let strjoin1 = arrsplit2.join('');
+		console.log(strjoin1);
+
+	</script>
+</html>
